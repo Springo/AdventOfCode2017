@@ -5,7 +5,7 @@ def readFile(filename):
             lines.append(line[:-1])
     return lines
 
-lines = readFile("d01dat.txt")
+lines = readFile("d01input.txt")
 line = lines[0]
 checker = line + line
 dist = len(line) // 2

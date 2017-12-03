@@ -5,14 +5,11 @@ def readFile(filename):
             lines.append(line[:-1])
     return lines
 
-lines = readFile("d02dat.txt")
+lines = readFile("d02input.txt")
 intlines = []
 for line in lines:
     splitline = line.split()
-    newline = []
-    for val in splitline:
-        newline.append(int(val))
-    intlines.append(newline)
+    intlines.append([int(val) for val in splitline])
 checksum = 0
 for line in intlines:
     for i in range(len(line)):
