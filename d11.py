@@ -21,9 +21,9 @@ for s in steps:
         x += 1
     elif s[-1] == 'w':
         x -= 1
-    steps = max(abs(x), abs(y))
-    if steps > highest:
-        highest = steps
+    stps = max(abs(x), abs(y))
+    if stps > highest:
+        highest = stps
 
 print(max(abs(x),abs(y)))
 print(highest)
